@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEN</title>
+    <link rel="stylesheet" href="src/input.css">
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-offwhite ">
+    <!-- home -->
+    <section id="home"> 
+        <div id="curtain" class="fixed -z-20 top-0 left-0 w-full h-full overflow-hidden flex  items-center">
+            <span class="absolute z-50 top-0 left-0 w-[200%] h-full block origin-bottom-left transition-all duration-500 ease-in-out -rotate-90 delay-200 bg-maincolor"></span>
+            <span class="absolute z-50 top-0 left-0 w-[200%] h-full block origin-bottom-left transition-all duration-500 ease-in-out -rotate-90 delay-100 bg-offwhite"></span>
+            <span class="absolute z-50 top-0 left-0 w-[200%] h-full block origin-bottom-left transition-all duration-500 ease-in-out -rotate-90 delay-0 bg-white"></span>
+            <ul id="btn" class="px-6 absolute z-50 transition-all duration-600 opacity-0 delay-0 flex flex-col gap-6">
+                <li class="m-[10px] hover:translate-x-7 transition-all duration-500"><a class="italics text-maincolor text-5xl lg:text-8xl block font-serif" href="#home">home</a></li>
+                <li class="m-[10px] hover:translate-x-7 transition-all duration-500"><a class="italics text-maincolor text-5xl lg:text-8xl block font-serif" href="#skill">skills</a></li>
+                <li class="m-[10px] hover:translate-x-7 transition-all duration-500"><a class="italics text-maincolor text-5xl lg:text-8xl block font-serif" href="#projects">projects</a></li>
+                <li class="m-[10px] hover:translate-x-7 transition-all duration-500"><a class="italics text-maincolor text-5xl lg:text-8xl block font-serif" href="#contact">contact</a></li>
+            </ul>
+            <!-- <div onclick="toggle()" class="toggle fixed top-[20px] right-[20px] w-[50px] h-[50px] bg-maincolor bg-[5px] z-50 w-full h-full transition-all duration-500"></div> -->
+        </div>
+        <div class="flex items-center mx-2 relative h-0 top-4">
+            <p class="italics font-serif text-maincolor text-2xl">portfolio</p>
+            <span class="bg-maincolor w-full h-[2px] mx-2 block"></span>
+            <p class="italics font-serif text-maincolor text-2xl">frontend</p>
+            <span class="bg-maincolor w-full h-[2px] mx-2 block"></span>
+            <p class="font-serif text-maincolor text-2xl invisible">portfolio</p>
+            <div id="btntoggle" onclick="toggle()" class="z-50 toggle fixed w-[40px] h-[40px] right-0 mr-6 mt-5 cursor-pointer transition-all duration-500 flex flex-col gap-3">
+                <span class="bg-maincolor w-full h-[2px] block"></span>
+                <span class="bg-maincolor w-full h-[2px] block"></span>
+                <span class="bg-maincolor w-full h-[2px] block"></span>
+            </div>
+        </div>
+            <div class="h-[100vh] flex justify-center flex-col px-6">
+                <h1 id="adrian" class="italics hover:tracking-wider text-7xl text-maincolor font-serif lg:text-9xl w-0 stroke hollow hover:text-transparent">Adrian</h1>
+                <h1 class="italics hover:tracking-wider text-7xl text-maincolor font-serif lg:text-9xl w-0 stroke hollow hover:text-transparent">Elfiky</h1>
+                <h1 class="italics hover:tracking-wider text-7xl text-maincolor font-serif lg:text-9xl w-0 stroke hollow hover:text-transparent">Narendra</h1>
+            </div>
+            <div>
+
+            </div>
+    </section>
+    <script src="src/js/script.js"></script>
+
+    <!-- about -->
+    <section id="about">
+        <div class="h-full lg:h-screen flex flex-col justify-center items-center px-6 my-20 lg:my-0 lg:grid lg:grid-cols-2">
+            <div class="mr-auto relative">
+                <img class="w-full lg:w-[380px] border-2 border-maincolor" src="src/about-1.jpg" alt="">
+                <img class="invisible lg:visible absolute bottom-[-2rem] right-[-4rem] w-full lg:w-[200px] border-2  border-maincolor" src="src/about-2.jpg" alt="">
+            </div>
+            <div class="flex flex-col gap-4">
+                <div>
+                    <h1 class="italics hover:tracking-wider text-5xl text-maincolor font-serif lg:text-[6.5rem] tracking-tighter w-0  stroke hollow hover:text-transparent">About</h1>
+                    <span class="bg-maincolor w-[120px] h-[2px] block"></span>
+                </div>
+                <p class="text-justify lg:text-xl text-color">Currently studying in IDN Boarding School, im a passionate and talented developer with a classy design taste. Always learning the newest and the best way to develop a web or an app.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects -->
+    <section id="projects">
+        <div class="flex flex-col lg:h-full gap-4 px-6 my-20">
+            <div>
+                <p class="heading-project">My</p>
+                <h1 class="heading-project">Work</h1>
+                <span class="bg-maincolor w-[120px] h-[2px] block"></span>
+            </div>
+            <div class="flex flex-col gap-20 lg:px-12">
+
+                <div class="flex flex-col items-end justify-center">
+                    <div>
+                        <img class="w-full lg:w-[750px]" src="src/project-1.png" alt="">
+                        <a target="_blank" href="https://surly-v2.netlify.app/" class="italics hover:tracking-wider text-4xl leading-none text-transparent font-serif lg:text-[5rem] stroke stroke-color hollow hover:text-maincolor">Surly 2.0</a>
+                        <span class="bg-maincolor w-[50px] lg:w-[120px] h-[2px] block"></span>
+                        <h6 class=" lg:text-2xl text-color mt-[1rem]">HTML, CSS, Javascript, Tailwind.</h6>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center items-start">
+                    <div>
+                        <img class="w-full lg:w-[750px]" src="src/project-2.png" alt="">
+                        <a target="_blank" href="https://smpins.netlify.app/" class="italics hover:tracking-wider text-4xl leading-none text-transparent font-serif lg:text-[5rem] stroke stroke-color hollow hover:text-maincolor">INS Website</a>
+                        <span class="bg-maincolor w-[50px] lg:w-[120px] h-[2px] block"></span>
+                        <h6 class=" lg:text-2xl text-color mt-[1rem]">HTML, CSS, Javascript, Tailwind.</h6>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-end justify-center">
+                    <div>
+                        <img class="w-full lg:w-[750px]" src="src/project-3.png" alt="">
+                        <a target="_blank" href="https://adriannarendra.github.io/IDN-CompanyProfile/" class="italics hover:tracking-wider text-4xl leading-none text-transparent font-serif lg:text-[5rem] stroke stroke-color hollow hover:text-maincolor">IDNBS Website</a>
+                        <span class="bg-maincolor w-[50px] lg:w-[120px] h-[2px] block"></span>
+                        <h6 class=" lg:text-2xl text-color mt-[1rem]">HTML, CSS, Javascript.</h6>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center items-start">
+                    <div>
+                        <img class="w-full lg:w-[750px]" src="src/project-4.png" alt="">
+                        <a target="_blank" href="https://surly-v2.netlify.app/" class="italics hover:tracking-wider text-4xl leading-none text-transparent font-serif lg:text-[5rem] stroke stroke-color hollow hover:text-maincolor">G-SHOCK Website</a>
+                        <span class="bg-maincolor w-[50px] lg:w-[120px] h-[2px] block"></span>
+                        <h6 class=" lg:text-2xl text-color mt-[1rem]">HTML, CSS, Javascript.</h6>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-end justify-center">
+                    <div>
+                        <img class="w-full lg:w-[750px]" src="src/project-5.png" alt="">
+                        <a target="_blank" href="https://surly-v2.netlify.app/" class="italics hover:tracking-wider text-4xl leading-none text-transparent font-serif lg:text-[5rem] stroke stroke-color hollow hover:text-maincolor">Al-Qur'an Website</a>
+                        <span class="bg-maincolor w-[50px] lg:w-[120px] h-[2px] block"></span>
+                        <h6 class=" lg:text-2xl text-color mt-[1rem]">HTML, CSS, Bootstrap, Javascript.</h6>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center items-start">
+                    <div>
+                        <img class="w-full lg:w-[750px]" src="src/project-6.png" alt="">
+                        <a target="_blank" href="#" class="italics hover:tracking-wider text-4xl leading-none text-transparent font-serif lg:text-[5rem] stroke stroke-color hollow hover:text-maincolor">E-Commerce Website</a>
+                        <span class="bg-maincolor w-[50px] lg:w-[120px] h-[2px] block"></span>
+                        <h6 class=" lg:text-2xl text-color mt-[1rem]">HTML, CSS, Tailwind, Laravel.</h6>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <span class="bg-maincolor w-full h-[2px] block"></span>
+    <!-- contact -->
+    <section id="contact">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h1 class="italics hover:tracking-wider text-5xl text-maincolor font-serif lg:text-[6.5rem] tracking-tighter stroke hollow hover:text-transparent text-center mb-6">Chat With Me</h1>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-color">Your email</label>
+                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-color text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2" placeholder="yourname@gmail.com" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-color">Subject</label>
+                    <input type="text" id="subject" class="block p-3 w-full text-sm text-color bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-50" placeholder="Let me know what i can help you with." required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-color">Your message</label>
+                    <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-color bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-50" placeholder="The Detalis...."></textarea>
+                </div>
+                <button type="submit" class="text-white bg-maincolor text-lg font-semibold border-2 border-maincolor py-2 px-5 rounded-lg font-serif hover:bg-transparent h-full">Send message</button>
+            </form>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="src/js/vanilla-tilt.js"></script>
+
+
+    <!-- footer -->
+
+    <section id="footer">
+        
+
+        <footer class="bg-offwhite dark:bg-black">
+            <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 Adrian Elfiky. All Rights Reserved.
+            </span>
+            </div>
+        </footer>
+        
+            </section>
+</body>
+</html>

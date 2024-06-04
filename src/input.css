@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: helvetica;
+    src: url(helvetica.ttf);
+}
+
+@font-face {
+    font-family: chicago;
+    src: url(chicago.ttf);
+}
+
+:root{
+    
+}
+
+#curtain.active .toggle{
+    @apply bg-red-500
+}
+
+#curtain.active span:nth-child(1){
+    @apply rotate-0 z-[1] delay-0
+}
+
+#curtain.active span:nth-child(2){
+    @apply rotate-0 z-[2] delay-100
+}
+
+#curtain.active span:nth-child(3){
+    @apply rotate-0 z-[3] delay-200
+}
+
+#curtain.active ul{
+    @apply visible opacity-[1] delay-500
+}
+
+.bg-offwhite{
+    background: #FCF6F5;
+}
+
+.text-color{
+    color: #112A46;
+}
+
+.helvetica{
+    font-family: helvetica;
+}
+
+.chicago{
+    font-family: chicago;
+}
+
+.z-9{
+    z-index: 9;
+}
+
+.z-8{
+    z-index: 8;
+}
+
+.italics {
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.italics:hover {
+    -webkit-transform: skewX(-5deg);
+    -moz-transform: skewX(-5deg);
+    -o-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    
+}
+
+.grit {
+    -webkit-mask-image: url("https://previews.123rf.com/images/mihail39/mihail391803/mihail39180300034/97184499-white-texture-grainy-plaster-wall-close-up-background.jpg");
+    mask-image: url("https://previews.123rf.com/images/mihail39/mihail391803/mihail39180300034/97184499-white-texture-grainy-plaster-wall-close-up-background.jpg");
+}
+
+.stroke{
+    -webkit-text-stroke-width: 1px;
+}
+
+.stroke-color{
+    -webkit-text-stroke-color: #990011;
+}
+
+.hollow:hover {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #990011;
+    transition: .4s;
+    
+} 
+
+.heading-project{
+    @apply italics hover:tracking-wider text-5xl text-maincolor font-serif lg:text-[6.5rem] w-0 stroke hollow hover:text-transparent
+}
+
+/* contact */
+
